@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url('Gotham-Black.ttf');
+    font-family: 'gotham-black';    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('Roboto-medium.ttf');
+    font-family: 'roboto-medium';    
+    font-weight: normal;
+    font-style: normal;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+    margin-left: 20px;
+}
+
+#box-cardapio {
+    background-color: #990101;
+    height: 45px;
+}
+
+#h1-cardapio {
+    color: #fff;
+    font-family: 'gotham-black';
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+.description {
+    font-size: 14px;
+    font-family: 'roboto-medium';
+    color: #741C00;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.title {
+    font-size: 16px;
+    font-family: 'gotham-Black';
+    color: #2F0C01;
+}
+
+#coffee {
+    width: 180px;
+}
+
+.box-photo {
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.text {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.price-button {
+    background-color: #990101;
+    border-radius: 15px;
+    border: 0;
+    width: 230px;
+    height: 40px;
+    left: -25px;
+    position: absolute;
+}
+
+.text-price {
+    align-items: center;
+    font-size: 30px;
+    font-family: 'gotham-black';
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.countainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu-mobile {
+    margin-right: 20px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    cursor: pointer;
+}
+  
+li {
+    list-style: none;
+    height: 50px;
+    margin-top: 13px;
+}
+
+ul {
+    display: block;
+    transition: all 0.4s;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 0vh; /*ocultando acima do header para descer com o checked*/
+    top: -300px; /*ocultando acima do header para descer com o checked*/
+    left: 0;
+    z-index: 1;   /*para ficar acima da camada dos demais itens do site*/
+    position: absolute;
+    background-color: #990101;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    width: 25px;
+}
+
+#check:checked ~ ul { /*aqui se cria animação de descer o ul que destava acima do header*/
+    height: 100vh;
+    top: 85px;
+}
+
+#button-mobile {
+    color: #fff;
+    font-family: gotham black;
+    font-size: 16px;
+    background-color: #990101;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#button-mobile:hover {
+    color: #990101;
+    transition: 1s;
+    font-family: 'gotham-black';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width:410px) {
+
+    #coffee {
+        width: 160px;
+    }
+    
+    .box-photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 13px;
+    }
+
+    .price-button {
+        border-radius: 13px;
+        width: 210px;
+        height: 36px;
+        left: -20px;
+    }
+    
+    .text-price {
+        font-size: 26px;
+    }
+
+    .line {
+        margin-top: 10px;
+    }
+
+    .text {
+        width: 180px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    #coffee {
+        width: 140px;
+    }
+    
+    .box-photo {
+        width: 140px;
+        height: 140px;
+        
+    }
+    
+    .text-price {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 13px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:360px) {
+
+    .countainer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text {
+        width: 155px;
+    }
+
+    .price-button {
+        border-radius: 13px;
+        width: 180px;
+        height: 36px;
+        left: -20px;
+    }
+    
+    .text-price {
+        font-size: 24px;
+    }
+}
