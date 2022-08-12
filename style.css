@@ -53,8 +53,8 @@ header {
     font-size: 14px;
     font-family: 'roboto-medium';
     color: #741C00;
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-bottom: 16px;
 }
 
 .title {
@@ -85,13 +85,13 @@ header {
     border: 0;
     width: 230px;
     height: 40px;
-    left: -25px;
+    left: -35px;
     position: absolute;
 }
 
 .text-price {
     align-items: center;
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'gotham-black';
     color: #fff;
     margin-bottom: 3px;
@@ -100,7 +100,10 @@ header {
 .countainer {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .menu-mobile {
@@ -147,7 +150,7 @@ label {
 
 #button-mobile {
     color: #fff;
-    font-family: gotham black;
+    font-family: 'gotham-black';
     font-size: 16px;
     background-color: #990101;
     width: 100%;
@@ -168,12 +171,12 @@ label {
 @media (max-width:410px) {
 
     #coffee {
-        width: 160px;
+        width: 170px;
     }
     
     .box-photo {
-        width: 160px;
-        height: 160px;
+        width: 170px;
+        height: 170px;
         border-radius: 13px;
     }
 
@@ -197,9 +200,46 @@ label {
         margin-top: 0px;
     }
 
+    .title {
+        font-size: 14px; 
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width:375px) {
+
+    #coffee {
+        width: 150px;
+    }
+    
+    .box-photo {
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+    .text-price {
+        font-size: 22px;
+    }
+
+
+    .description {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:360px) {
 
     #coffee {
         width: 140px;
@@ -210,24 +250,6 @@ label {
         height: 140px;
         
     }
-    
-    .text-price {
-        font-size: 24px;
-    }
-
-    .description {
-        font-size: 13px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-    }
-    
-    .title {
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width:360px) {
 
     .countainer {
         margin-left: 10px;
@@ -246,6 +268,16 @@ label {
     }
     
     .text-price {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    
+    .title {
+        font-size: 13px;
     }
 }
