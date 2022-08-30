@@ -17,11 +17,11 @@
     font-style: normal;
 }
 
-.line {
-    height: 1px;
-    width: 100%;
-    background-color: black;
-    margin-top: 10px;
+@font-face {
+    src: url('IBMPlexSansThai-Bold.ttf');
+    font-family: 'IBM-plex-bold';    
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
@@ -36,74 +36,17 @@ header {
     margin-left: 20px;
 }
 
-#box-cardapio {
+#box-menu{
     background-color: #990101;
     height: 45px;
 }
 
-#h1-cardapio {
+#h1-menu {
     color: #fff;
     font-family: 'gotham-black';
     font-size: 20px;
     text-align: center;
     padding: 12px;
-}
-
-.description {
-    font-size: 14px;
-    font-family: 'roboto-medium';
-    color: #741C00;
-    margin-top: 12px;
-    margin-bottom: 16px;
-}
-
-.title {
-    font-size: 16px;
-    font-family: 'gotham-Black';
-    color: #2F0C01;
-}
-
-#coffee {
-    width: 180px;
-}
-
-.box-photo {
-    overflow: hidden;
-    width: 180px;
-    height: 180px;
-    border-radius: 15px;
-}
-
-.text {
-    width: 200px;
-    margin-top: 10px;
-}
-
-.price-button {
-    background-color: #990101;
-    border-radius: 15px;
-    border: 0;
-    width: 230px;
-    height: 40px;
-    left: -35px;
-    position: absolute;
-}
-
-.text-price {
-    align-items: center;
-    font-size: 24px;
-    font-family: 'gotham-black';
-    color: #fff;
-    margin-bottom: 3px;
-}
-
-.countainer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .menu-mobile {
@@ -123,7 +66,7 @@ li {
 
 ul {
     display: block;
-    transition: all 0.4s;
+    transition: all 850ms;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -160,7 +103,7 @@ label {
 
 #button-mobile:hover {
     color: #990101;
-    transition: 1s;
+    transition: 690ms;
     font-family: 'gotham-black';
     background-color: #fff;
     width: 100%;
@@ -168,116 +111,66 @@ label {
     border: 0;
 }
 
-@media (max-width:410px) {
-
-    #coffee {
-        width: 170px;
-    }
-    
-    .box-photo {
-        width: 170px;
-        height: 170px;
-        border-radius: 13px;
-    }
-
-    .price-button {
-        border-radius: 13px;
-        width: 210px;
-        height: 36px;
-        left: -20px;
-    }
-    
-    .text-price {
-        font-size: 26px;
-    }
-
-    .line {
-        margin-top: 10px;
-    }
-
-    .text {
-        width: 180px;
-        margin-top: 0px;
-    }
-
-    .title {
-        font-size: 14px; 
-    }
-
-    .description {
-        font-size: 13px;
-    }
-
+.countainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-@media (max-width:375px) {
-
-    #coffee {
-        width: 150px;
-    }
-    
-    .box-photo {
-        width: 150px;
-        height: 150px;
-        
-    }
-    
-    .text-price {
-        font-size: 22px;
-    }
-
-
-    .description {
-        font-size: 13px;
-        margin-top: 12px;
-        margin-bottom: 10px;
-    }
-    
-    .title {
-        font-size: 14px;
-    }
-
+.box-box-product {
+    margin: 12px;
 }
 
-@media (max-width:360px) {
+.box-photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-    #coffee {
-        width: 140px;
-    }
-    
-    .box-photo {
-        width: 140px;
-        height: 140px;
-        
-    }
+.photo {
+    width: 180px;
+}
 
-    .countainer {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.title {
+    font-size: 14px ;
+    font-family: 'IBM-plex-bold';
+    margin-top: 9px;
+    color: #2F0C01;
+}
 
-    .text {
-        width: 155px;
-    }
+.price {
+    font-family: 'IBM-plex-bold';
+    font-size: 16px;
+    color: #2F0C01;
+}
 
-    .price-button {
-        border-radius: 13px;
-        width: 180px;
-        height: 36px;
-        left: -20px;
-    }
-    
-    .text-price {
-        font-size: 20px;
-    }
+.box-product {
+   text-align: center;
+}
 
-    .description {
-        font-size: 12px;
-        margin-top: 10px;
-        margin-bottom: 8px;
-    }
-    
-    .title {
-        font-size: 13px;
-    }
+#details {
+    margin-top: 6px;
+    background-color: #990101;
+    width: 179px;
+    height: 29px;
+    border-radius: 13px;
+    font-family: 'roboto-medium';
+    font-size: 14px;
+    color: #ffff;
+    border: 0;
+    cursor: pointer;
+}
+
+#details:hover{
+    background-color: #ffffff;
+    width: 179px;
+    height: 29px;
+    border-radius: 13px;
+    font-family: 'roboto-medium';
+    font-size: 14px;
+    color: #990101;
+    border: 2px solid #990101;
+    transition-duration: 330ms;
 }
